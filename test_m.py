@@ -3,7 +3,7 @@ import main
 
 
 #@pytest.mark.xfail
-@pytest.mark.parametrize("a,b,c",[(3,2,5),(1,5,6),(5,7,12)])
+@pytest.mark.parametrize("a,b,c",[(3,2,5),(1,5,6),(5,7,2)])
 def test_add(a,b,c):
     r1 = main.add(a,b)
     assert c == r1
